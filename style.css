@@ -1,0 +1,24 @@
+.title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.slam-input {
+  background-color: #abf0dda8;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.input-form {
+  width: fit-content;
+}
+
+.input-form input {
+  margin-bottom: 0.5rem;
+}
+
+#input-content {
+  min-height: 35px;
+  min-width: 300px;
+  display: block;
+}
