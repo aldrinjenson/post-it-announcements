@@ -1,9 +1,18 @@
+body {
+  margin: 0;
+}
+section {
+  padding: 30px;
+}
 .title {
   text-align: center;
   font-size: xx-large;
 }
+.subTitle {
+  text-decoration: underline;
+}
 
-.slam-input {
+.announcement-input {
   background-color: #abf0dda8;
   padding: 50px;
   display: flex;

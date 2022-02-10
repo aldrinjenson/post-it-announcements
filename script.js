@@ -1,12 +1,12 @@
-const slamContentInput = document.getElementById("input-content");
-const slamAuthorInput = document.getElementById("input-author");
+const announcementContentInput = document.getElementById("input-content");
+const announcementAuthorInput = document.getElementById("input-author");
 const submitButton = document.getElementById("submitButton");
-const slamsList = document.getElementById("slam-list");
+const announcementsList = document.getElementById("announcement-list");
 
 submitButton.addEventListener("click", () => {
-  addToList(slamContentInput.value, slamAuthorInput.value);
-  slamContentInput.value = "";
-  slamAuthorInput.value = "";
+  addToList(announcementContentInput.value, announcementAuthorInput.value);
+  announcementContentInput.value = "";
+  announcementAuthorInput.value = "";
 });
 
 function addToList(h4Val, pVal) {
@@ -17,5 +17,5 @@ function addToList(h4Val, pVal) {
   newH4.innerText = h4Val;
   newLi.appendChild(newH4);
   newLi.appendChild(newP);
-  slamsList.appendChild(newLi);
+  announcementsList.prepend(newLi);
 }
